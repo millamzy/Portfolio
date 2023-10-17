@@ -8,6 +8,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("2lTHvw_HQcvzUTu3R");
+})();
+</script>
+
 </head>
 <body>
 
@@ -18,6 +28,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
+            <a href="#certificate">Certificate</a>
             <a href="#contact">contact</a>
         </nav>
     </header>
@@ -42,13 +53,13 @@
             <a href="My Resume.pdf" download class="btn">Download</a>
         </div>
         <div class="home-img">
-            <img src="IMG_5150.jpeg" alt=""> 
+            <img src="mil1.jpeg" alt=""> 
         </div>
     </section>
      <!-- about section design -->
      <section class="about" id="about">
         <div class="about-img">
-            <img src="kill.jpeg" alt="">
+            <img src="mil2.jpeg" alt="">
         </div>
         <div class="about-content">
             <h2 class="heading">About<span>Me</span></h2>
@@ -130,39 +141,54 @@
 
 
             <div class="Portfolio-box">
-                <img src="style.PNG" alt="">
+                <img src="train.PNG" alt="">
                 <div class="Portfolio-layer">
-                    <h4>movie App</h4>
+                    <h4>website for code learning </h4>
                     <p> web Online mini store with javascript,html,css and FAKE API</p>
-                    <a href="#"><i class='bx bx-task' ></i></a>
+                    <a href="https://train2workinit.com/"><i class='bx bx-task' ></i></a>
                 </div>
             </div> 
          
             <div class="Portfolio-box">
-                <img src="todo.PNG" alt="">
+                <img src="code.PNG" alt="">
                 <div class="Portfolio-layer">
                     <h4>Web Design</h4>
-                    <p> aldshfasjfhjkaskfbjbjksnkanfa;fk;j;ksf</p>
+                    <p> A coding learning website</p>
                     <a href="#"><i class='bx bx-task' ></i></a>
                 </div>
             </div> 
+        </section>
+
+        <!----my certificate---->
+        <section class="certificate" id="certificate">
+            <h2 class="heading ">My<span>Certificates</span></h2>
+            <div class="mycert">
+               
+                
+                <div class="cert"><a href="https://www.udemy.com/share/109G0U3@zzi9uFtbKRQHGJ7dQKjjkDm29lGE2ND8Xjt5MvQSD0FjxRB3jnRu8povSa_I2TLzQA==/"><img src="core css.jpg"><p>Core CSS Mastery(coursera)</p></a></div>
+                <div class="cert"><a href="https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxNzI0IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfNDU3NTIyNV8xNjk3MTM1ODk3LnBuZyIsInVzZXJuYW1lIjoiQWdvemlsaW0gTmRlZm8ifQ%3D%3D&utm_source=shared-certificate&utm_medium=lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Flms.simplilearn.com%2Fcourses%2F4212%2FJavaScript-for-Beginners%2Fcertificate%2Fdownload-skillup&%24web_only=true&_branch_match_id=1209471767257429953&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1k%2FVD7PIDc6OcMoJdEkCAI7L7QYlAAAA"><img src="javascrpit skillup.png"><p>javascript from simplilearn.com </p></a></div>
+                <div class="cert"><a href="https://coursera.org/share/e51a1003efbd0b7182aca531e7ebf6f0"><img src="Javascript certificate.PNG"><p>Programming with javascript (coursera)</p></a></div>
+                <div class="cert"><a href="https://coursera.org/share/46ad3a2bc364ae1507ce7fd49a348c1c"><img src="html and css dept certificate.PNG"><p>HTML and css indept (coursera)</p></a></div>
+                <div class="cert"><a href="https://coursera.org/share/b79ba831134bbef23c36768ca071b9d4"><img src="introduction to frontend.PNG"><P>introduction to frontend</P></a></div>
+                <div class="cert"><a href="https://coursera.org/share/da0eacf52c37759cfc13981a9ee6f4dc"><img src="university.PNG"><p>University Of Michigan</p></a></div>
+            </div>
         </section>
              
             <!-- contact section -->
             <section class="contact" id="contact">
                 <h2 class="heading"> Contact<span>Me!</span></h2>
 
-                <form action="#">
+                <form  id="form">
                     <div class="input-box">
-                        <input type="text" placeholder="Full Name">
-                        <input type="email" placeholder="email Address">
+                        <input type="text" placeholder="Full Name" id="Name">
+                        <input type="text" placeholder="email Address" id="email">
                     </div>
                     <div class="input-box">
-                        <input type="number" placeholder="mobile Number">
-                        <input type="text" placeholder="email Subject">
+                        <input type="number" placeholder="mobile Number" id="number">
+                        <input type="text" placeholder="emailSubject" id="email Subject">
                     </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-                  <input type="submit" value="send message" class="btn">
+                    <textarea name="message"  cols="30" rows="10" placeholder="your message" id="message"></textarea>
+                  <input type="submit" value="send message" class="btn" >
                 </form>
             </section>
                       <!-- footer design -->
