@@ -472,6 +472,10 @@ span{
         padding-bottom: 7rem;
     }
 
+    .certificate{
+        padding-bottom:7rem ;
+    }
+
     .contact{
         min-height: auto;
     }
